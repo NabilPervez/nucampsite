@@ -1,17 +1,30 @@
+$color-primary: #3046C5;
+$color-secondary: #5637dd;
+$color-pale: #CEC8FF;
+$color-mid: #901CAD;
+$color-dark: #60106b;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+
+$body-font: "Open Sans", sans-serif;
+$header-font: "Lobster", cursive;
+
+
 body{
-    font-family: "Open Sans", sans-serif;
+    font-family: $body-font;
 }
 
 h1, h2, h3 {
-    font-family: "Lobster", cursive;
+    font-family: $header-font;
 }
 
 h2 {
-    color: blue;
+    color: $color-primary;
 }
 
-header h2{
-    color: pink;
+header {
+    h2{
+        color: $color-pale;
+    }
 }
 
 .site-footer{
@@ -22,7 +35,7 @@ header h2{
 .jumbotron{
     margin: 0px;
     padding: 30px;
-    background-image: linear-gradient(to right, rgb(211, 40, 211),rgb(104, 104, 248), rgb(0, 86, 245));
+    background-image: linear-gradient(to right,$color-dark,$color-secondary,$color-primary);
 }
 
 .row-content{
@@ -32,7 +45,7 @@ header h2{
 }
 
 .navbar {
-    background-color: #901CAD;
+    background-color: $color-mid;
 }
 
 .card-header{
@@ -49,7 +62,7 @@ header h2{
 }
 
 .carousel {
-    border: solid #5637DD;
+    border: solid $color-secondary;
 }
 
 #carouselButton {
